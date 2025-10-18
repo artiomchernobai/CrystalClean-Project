@@ -1,0 +1,9 @@
+{
+  "Placeholder": {
+    "loading": "Loading..."
+  },
+  "GreetingMessage": {
+    "bigHello": "Welcome! Current locale:",
+    "smallerHello": "This is the home page for"
+  }
+}

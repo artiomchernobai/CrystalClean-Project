@@ -1,0 +1,9 @@
+{
+  "Placeholder": {
+    "loading": "Incarca..."
+  },
+  "GreetingMessage": {
+    "bigHello": "Bine ati venit! Limba curenta:",
+    "smallerHello": "Aceasta este pagina de start pentru"
+  }
+}
