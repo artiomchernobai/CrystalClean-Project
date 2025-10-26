@@ -7,6 +7,10 @@ export default function GreetingMessage() {
     const locale = useLocale();
     const t = useTranslations('GreetingMessage');
 
+    console.log('locale:', locale);
+    console.log('t(bigHello):', t('bigHello'));
+
+
     return (
         <div style={{ padding: '2rem' }}>
             <h1>{t('bigHello')} {locale}</h1>

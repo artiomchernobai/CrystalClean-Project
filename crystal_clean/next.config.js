@@ -1,11 +1,10 @@
-// next.config.js
 const createNextIntlPlugin = require('next-intl/plugin');
 
-const withNextIntl = createNextIntlPlugin();
+const withNextIntl = createNextIntlPlugin({
+  locales: ['en', 'ro', 'ru'],
+  defaultLocale: 'en'
+});
 
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
-};
-
-module.exports = withNextIntl(nextConfig);
+module.exports = withNextIntl({
+  reactStrictMode: true
+});
