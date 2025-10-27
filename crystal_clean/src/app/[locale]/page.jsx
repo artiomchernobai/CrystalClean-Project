@@ -1,8 +1,8 @@
 'use client'
-import { notFound } from 'next/navigation';
 import GreetingMessage from "@/components/GreetingMessage";
 import { useParams } from 'next/navigation';
 import { useTranslations } from 'next-intl';
+import Header from '@/components/Header';
 
 export default  function DefPage() {
   const { locale } = useParams();
@@ -12,6 +12,7 @@ export default  function DefPage() {
 
   return (
     <div>
+      <Header />
       <GreetingMessage />
       <p>{t('loading')}</p>
     </div>

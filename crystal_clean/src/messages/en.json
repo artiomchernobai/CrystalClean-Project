@@ -5,5 +5,11 @@
   "GreetingMessage": {
     "bigHello": "Welcome! Current locale:",
     "smallerHello": "This is the home page for"
+  },
+  "Header": {
+    "home": "Home",
+    "about": "About",
+    "contact": "Contact"
   }
 }
+

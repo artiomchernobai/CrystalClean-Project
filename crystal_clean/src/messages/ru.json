@@ -5,5 +5,10 @@
   "GreetingMessage": {
     "bigHello":"Добро пожаловать! Текущий язык:",
     "smallerHello": "Это домашняя страница для "
+  },
+    "Header": {
+    "home": "Главная",
+    "about": "О нас",
+    "contact": "Контакты"
   }
 }

@@ -5,5 +5,10 @@
   "GreetingMessage": {
     "bigHello": "Bine ati venit! Limba curenta:",
     "smallerHello": "Aceasta este pagina de start pentru"
+  },
+      "Header": {
+    "home": "Principala",
+    "about": "Despre noi",
+    "contact": "Contacte"
   }
 }
