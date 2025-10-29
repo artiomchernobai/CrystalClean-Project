@@ -7,8 +7,8 @@
     "smallerHello": "Aceasta este pagina de start pentru"
   },
       "Header": {
-    "home": "Principala",
-    "about": "Despre noi",
-    "contact": "Contacte"
+    "home": "principala",
+    "about": "despre noi",
+    "services": "servicii"
   }
 }

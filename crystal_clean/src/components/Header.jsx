@@ -31,7 +31,7 @@ export default function Header() {
       position="static"
       sx={{
         backgroundColor: 'white',       // ✅ фон белый
-        color: '#38598C',               // ✅ текст и кнопки — предыдущий цвет фона
+        color: 'black',               // ✅ текст и кнопки — предыдущий цвет фона
       }}
     >
       <Toolbar sx={{ display: 'flex', justifyContent: 'space-between' }}>
@@ -43,19 +43,49 @@ export default function Header() {
           sx={{
             textDecoration: 'none',
             color: 'inherit',   // наследует #38598C
-            fontWeight: 600,
+            fontWeight: 500,
             letterSpacing: 1,
+            fontSize: '20px',
           }}
         >
           CrystalClean
         </Typography>
 
         {/* Ссылки */}
-        <Box sx={{ display: 'flex', gap: 2 }}>
-          <Button color="inherit" component={Link} href={`/${locale}`}>{t('home')}</Button>
-          <Button color="inherit" component={Link} href={`/${locale}/about`}>{t('about')}</Button>
-          <Button color="inherit" component={Link} href={`/${locale}/contact`}>{t('contact')}</Button>
+        <Box
+          sx={{
+            display: 'flex',
+            gap: 2,
+          }}
+        >
+          <Button
+            color="inherit"
+            component={Link}
+            href={`/${locale}/home`}
+            sx={{ fontSize: '20px', textTransform: 'none' }} // ← вот тут работает
+          >
+            {t('home')}
+          </Button>
+
+          <Button
+            color="inherit"
+            component={Link}
+            href={`/${locale}/about`}
+            sx={{ fontSize: '20px', textTransform: 'none' }}
+          >
+            {t('about')}
+          </Button>
+
+          <Button
+            color="inherit"
+            component={Link}
+            href={`/${locale}/services`}
+            sx={{ fontSize: '20px', textTransform: 'none' }}
+          >
+            {t('services')}
+          </Button>
         </Box>
+
 
         {/* Кнопка выбора языка */}
         <Box>

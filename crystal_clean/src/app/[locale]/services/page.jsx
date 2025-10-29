@@ -13,7 +13,7 @@ export default function DefPage() {
     return (
         <div>
             <Header />
-            <h1>home page</h1>
+            <h1>services page</h1>
             <GreetingMessage />
             <p>{t('loading')}</p>
         </div>
