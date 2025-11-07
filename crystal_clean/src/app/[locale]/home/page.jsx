@@ -4,6 +4,7 @@ import { useParams } from 'next/navigation';
 import { useTranslations } from 'next-intl';
 import Header from '@/components/Header';
 import Footer from "@/components/Footer";
+import PresentingImage from "@/components/PresentingImage";
 
 export default function DefPage() {
     const { locale } = useParams();
@@ -14,7 +15,7 @@ export default function DefPage() {
     return (
         <div>
             <Header />
-            <h1>home page</h1>
+            <PresentingImage />
             <GreetingMessage />
             <p>{t('loading')}</p>
             <Footer />

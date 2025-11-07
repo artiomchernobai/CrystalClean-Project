@@ -12,6 +12,14 @@
     "services": "УСЛУГИ"
   },
   "Footer": {
-    "rights": "Все права защищены."
+    "rights": "Все права защищены.",
+    "company": "Crystal Clean",
+    "about": "О нас",
+    "contact": "Связаться с нами",
+    "location": "Наше местоположение"
+  },
+  "homepage": {
+    "welcome": "Добро пожаловать в Crystal Clean!",
+    "welcomeDescription": "Мы предоставляем первоклассные услуги по уборке для вашего дома и офиса."
   }
 }

@@ -12,6 +12,14 @@
     "services": "SERVICII"
   },
   "Footer": {
-    "rights": "Toate drepturile rezervate."
+    "rights": "Toate drepturile sunt rezervate.",
+    "company": "Crystal Clean",
+    "about": "Despre Noi",
+    "contact": "Contacteaza-ne",
+    "location": "Locatia Noastra"
+  },
+  "homepage": {
+    "welcome": "Bine ati venit la Crystal Clean!",
+    "welcomeDescription": "Oferim servicii de curatenie de top pentru casa si biroul dumneavoastra."
   }
 }

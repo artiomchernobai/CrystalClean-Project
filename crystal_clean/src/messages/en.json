@@ -12,7 +12,15 @@
     "services": "SERVICES"
   },
   "Footer": {
-    "rights": "All rights reserved."
+    "rights": "All rights reserved.",
+    "company": "Crystal Clean",
+    "about": "About Us",
+    "contact": "Contact Us",
+    "location": "Our Location"
+  },
+  "homepage": {
+    "welcome": "Welcome to Crystal Clean!",
+    "welcomeDescription": "We provide top-notch cleaning services for your home and office."
   }
 }
 
