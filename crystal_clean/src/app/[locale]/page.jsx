@@ -3,6 +3,7 @@ import GreetingMessage from "@/components/GreetingMessage";
 import { useParams } from 'next/navigation';
 import { useTranslations } from 'next-intl';
 import Header from '@/components/Header';
+import Footer from "@/components/Footer";
 
 export default  function DefPage() {
   const { locale } = useParams();
@@ -15,6 +16,7 @@ export default  function DefPage() {
       <Header />
       <GreetingMessage />
       <p>{t('loading')}</p>
+      <Footer />
     </div>
   );
 }

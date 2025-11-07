@@ -7,8 +7,11 @@
     "smallerHello": "Aceasta este pagina de start pentru"
   },
       "Header": {
-    "home": "principala",
-    "about": "despre noi",
-    "services": "servicii"
+    "home": "PRINCIPALA",
+    "about": "DESPRE NOI",
+    "services": "SERVICII"
+  },
+  "Footer": {
+    "rights": "Toate drepturile rezervate."
   }
 }

@@ -10,6 +10,9 @@
     "home": "HOME",
     "about": "ABOUT",
     "services": "SERVICES"
+  },
+  "Footer": {
+    "rights": "All rights reserved."
   }
 }
 
