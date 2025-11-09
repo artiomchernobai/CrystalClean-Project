@@ -15,8 +15,6 @@ export default function DefPage() {
     <div>
       <Header />
       <h1>about page</h1>
-      <GreetingMessage />
-      <p>{t('loading')}</p>
       <Footer />
     </div>
   );

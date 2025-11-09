@@ -21,7 +21,7 @@ export default function PresentingImage() {
         sx={{
             position: 'relative',
             width: '100%',
-            height: '600px',
+            height: '700PX',
             backgroundImage: `
             linear-gradient(rgba(30, 20, 100, 0.0), rgba(30, 20, 100, 0.5)),
             url('/images/main_page_first.jpg')
@@ -39,7 +39,13 @@ export default function PresentingImage() {
             <Box
             sx={{
                 backgroundColor: 'rgba(0, 0, 0, 0.5)',
-                padding: '20px',    
+                width:'100%',
+                padding: '20px',  
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'center',
+                justifyContent: 'center',
+                gap: '20px',
             }}
             >
             <Typography variant="h1">{t('welcome')}</Typography>
