@@ -1,13 +1,16 @@
 import { Box, Typography } from "@mui/material";
 import ServiceSmallCard from "./ServiceSmallCard";
+import { useTranslations, useLocale } from 'next-intl';
 
 export default function MainServices() {
+    const locale = useLocale();
+    const t = useTranslations('homepage');
 
     return (
         <Box //main container
             sx={{
                 width: '100%',
-                minHeight: '400px',
+                minHeight: '500px',
                 backgroundColor: '#f0f0f0',
                 display: 'flex',
                 alignItems: 'center',
@@ -18,16 +21,22 @@ export default function MainServices() {
         >
             <Box //alignment container
                 sx={{
-                    width: '80%',
+                    width: '90%',
                     display: 'flex',
-                    alignItems: 'center',
+                    alignItems: 'Flex-start',
                     justifyContent: 'center',
                     flexDirection: 'row',
                 }}
             > 
                 <Box //text info
                     sx={{
-                        width: '50%',
+                        display: 'flex',
+                        alignItems: 'flex-start',
+                        justifyContent: 'center',
+                        flexDirection: 'column',
+                        paddingRight: '20px',
+                        gap: '15px',
+                        width: '30%',
                     }}
                 >
                     <Typography 
@@ -36,30 +45,67 @@ export default function MainServices() {
                             fontWeight: 'bold',
                         }}
                     >
-                        Our Prices
+                        {t('MainPriceHeader')}
                     </Typography>
-                    <Typography variant="h6">Details about main services will go here.</Typography>
+                    <Typography variant="body1" sx={{ fontSize:'18px' }}>{t('MainPriceDescription')}</Typography>
                 </Box> 
                 <Box //price cards container
                     sx={{
-                        width: '50%',
+                        width: '60%',
+                        flexWrap: 'wrap',
+                        display: 'flex',
+                        justifyContent: 'center',
+                        flexDirection: 'row'
                     }}
                 >
-                    <ServiceSmallCard
-                        title="Basic Cleaning"
-                        price="$50"
-                        link="/services/basic-cleaning"
-                    />
-                    <ServiceSmallCard
-                        title="Deep Cleaning"
-                        price="$150"
-                        link="/services/deep-cleaning"
-                    />
-                    <ServiceSmallCard
-                        title="Move-Out Cleaning"
-                        price="$200"
-                        link="/services/move-out-cleaning"
-                    />
+                    <Box // first column
+                        sx={{
+                            display: 'flex',
+                            flexDirection: 'column',
+                            marginRight: '10px',
+                            width: '40%'
+                        }}
+                    >
+                        <ServiceSmallCard
+                            title={t('MainPriceCard.carpetCleaning.title')}
+                            price={t('MainPriceCard.carpetCleaning.price')}
+                            link="/services/basic-cleaning"
+                        />
+                        <ServiceSmallCard
+                            title={t('MainPriceCard.windowCleaning.title')}
+                            price={t('MainPriceCard.windowCleaning.price')}
+                            link="/services/deep-cleaning"
+                        />
+                        <ServiceSmallCard
+                            title={t('MainPriceCard.fullHouseCleaning.title')}
+                            price={t('MainPriceCard.fullHouseCleaning.price')}
+                            link="/services/move-out-cleaning"
+                        />
+                    </Box>
+                    <Box // second column
+                        sx={{
+                            display: 'flex',
+                            flexDirection: 'column',
+                            marginLeft: '10px',
+                            width: '40%'
+                        }}
+                    >
+                        <ServiceSmallCard
+                            title={t('MainPriceCard.officeCleaning.title')}
+                            price={t('MainPriceCard.officeCleaning.price')}
+                            link="/services/basic-cleaning"
+                        />
+                        <ServiceSmallCard
+                            title={t('MainPriceCard.afterConstructionCleaning.title')}
+                            price={t('MainPriceCard.afterConstructionCleaning.price')}
+                            link="/services/deep-cleaning"
+                        />
+                        <ServiceSmallCard
+                            title={t('MainPriceCard.facadeCleaning.title')}
+                            price={t('MainPriceCard.facadeCleaning.price')}
+                            link="/services/move-out-cleaning"
+                        />
+                    </Box>
                 </Box>
             </Box>
         </Box>

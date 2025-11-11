@@ -20,7 +20,42 @@
   },
   "homepage": {
     "welcome": "Welcome to Crystal Clean!",
-    "welcomeDescription": "We provide top-notch cleaning services for your home and office."
+    "welcomeDescription": "We provide top-notch cleaning services for your home and office.",
+    "MainPriceHeader": "Our Prices",
+    "MainPriceDescription": "Choose from our range of affordable cleaning packages tailored to your needs.",
+    "MainPriceCard": {
+      "carpetCleaning": {
+        "title": "Carpet Cleaning",
+        "description": "Deep cleaning for all types of carpets.",
+        "price": "20 / square meter"
+      },
+      "windowCleaning": {
+        "title": "Window Cleaning",
+        "description": "Streak-free window cleaning services.",
+        "price": "15 / square meter"
+      },
+      "fullHouseCleaning": {
+        "title": "Full House Cleaning",
+        "description": "Comprehensive cleaning for your entire home.",
+        "price": "40 / square meter"
+      },
+      "officeCleaning": {
+        "title": "Office Cleaning",
+        "description": "Professional cleaning services for all your office space.",
+        "price": "30 / square meter"
+      },
+      "afterConstructionCleaning": {
+        "title": "After Construction Cleaning",
+        "description": "Thorough cleaning after construction or renovation work.",
+        "price": "50 / square meter"
+      },
+      "facadeCleaning": {
+        "title": "Facade Cleaning",
+        "description": "Expert cleaning for building facades.",
+        "price": "25 / square meter"
+      }
+
+    }
   }
 }
 

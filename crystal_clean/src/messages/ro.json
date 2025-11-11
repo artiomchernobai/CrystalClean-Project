@@ -20,6 +20,40 @@
   },
   "homepage": {
     "welcome": "Bine ati venit la Crystal Clean!",
-    "welcomeDescription": "Oferim servicii de curatenie de top pentru casa si biroul dumneavoastra."
+    "welcomeDescription": "Oferim servicii de curatenie de top pentru casa si biroul dumneavoastra.",
+    "MainPriceHeader": "Preturile Noastre",
+    "MainPriceDescription" : "Alege din gama noastra de pachete de curatenie accesibile, adaptate nevoilor tale.",
+    "MainPriceCard": {
+      "carpetCleaning": {
+        "title": "Curatarea Covorului",
+        "description": "Curatare profunda pentru toate tipurile de covoare.",
+        "price": "20 / metru patrat"
+      },
+      "windowCleaning": {
+        "title": "Curatarea Geamurilor",
+        "description": "Servicii de curatare a geamurilor fara urme.",
+        "price": "15 / metru patrat"
+      },
+      "fullHouseCleaning": {
+        "title": "Curatarea Completa a Casei",
+        "description": "Curatenie cuprinzatoare pentru intreaga dumneavoastra casa.",
+        "price": "40 / metru patrat"
+      },
+      "officeCleaning": {
+        "title": "Curatarea Biroului",
+        "description": "Servicii profesionale de curatenie pentru tot spatiul dumneavoastra de birou.",
+        "price": "30 / metru patrat"
+      },
+      "afterConstructionCleaning": {
+        "title": "Curatarea Dupa Constructie",
+        "description": "Curatenie temeinica dupa lucrari de constructie sau renovare.",
+        "price": "50 / metru patrat"
+      },
+      "facadeCleaning": {
+        "title": "Curatarea Fatadelor",
+        "description": "Curatare experta pentru fatadele cladirilor.",
+        "price": "25 / metru patrat"
+      }
+    }
   }
 }
