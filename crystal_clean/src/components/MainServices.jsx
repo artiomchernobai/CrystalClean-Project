@@ -69,17 +69,17 @@ export default function MainServices() {
                         <ServiceSmallCard
                             title={t('MainPriceCard.carpetCleaning.title')}
                             price={t('MainPriceCard.carpetCleaning.price')}
-                            link="/services/basic-cleaning"
+                            link={`/${locale}/services/carpetCleaning`}
                         />
                         <ServiceSmallCard
                             title={t('MainPriceCard.windowCleaning.title')}
                             price={t('MainPriceCard.windowCleaning.price')}
-                            link="/services/deep-cleaning"
+                            link={`/${locale}/services/windowCleaning`}
                         />
                         <ServiceSmallCard
                             title={t('MainPriceCard.fullHouseCleaning.title')}
                             price={t('MainPriceCard.fullHouseCleaning.price')}
-                            link="/services/move-out-cleaning"
+                            link={`/${locale}/services/fullHouseCleaning`}
                         />
                     </Box>
                     <Box // second column
@@ -93,17 +93,17 @@ export default function MainServices() {
                         <ServiceSmallCard
                             title={t('MainPriceCard.officeCleaning.title')}
                             price={t('MainPriceCard.officeCleaning.price')}
-                            link="/services/basic-cleaning"
+                            link={`/${locale}/services/officeCleaning`}
                         />
                         <ServiceSmallCard
                             title={t('MainPriceCard.afterConstructionCleaning.title')}
                             price={t('MainPriceCard.afterConstructionCleaning.price')}
-                            link="/services/deep-cleaning"
+                            link={`/${locale}/services/afterConstructionCleaning`}
                         />
                         <ServiceSmallCard
                             title={t('MainPriceCard.facadeCleaning.title')}
                             price={t('MainPriceCard.facadeCleaning.price')}
-                            link="/services/move-out-cleaning"
+                            link={`/${locale}/services/facadeCleaning`}
                         />
                     </Box>
                 </Box>

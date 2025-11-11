@@ -1,3 +1,5 @@
+'use client';
+
 import { Box, Typography, Link, Grid } from '@mui/material';
 import { useTranslations, useLocale } from 'next-intl';
 
@@ -11,24 +13,36 @@ export default function Footer() {
       sx={{
         backgroundColor: '#32598c',
         color: 'white',
+        mt: 4,
       }}
     >
-      <Grid container columnSpacing={30} rowSpacing={4}  justifyContent="center"
+      <Grid
+        container
+        spacing={15}
+        justifyContent="center"
         sx={{
-          paddingTop: '20px',
-          paddingBottom: '10px',
+          py: 3,
+          px: { xs: 2, md: 8 },
+          textAlign: { xs: 'center', md: 'left' },
         }}
       >
-        <Grid columns={12} span={{ xs: 12, md: 4 }}>
+        {/* Колонка 1 */}
+        <Grid item xs={12} md={4}>
           <Typography variant="h6" gutterBottom>
             {t('company')}
           </Typography>
-          <Link href={`/${locale}/about`} color="inherit" underline="hover">
+          <Link
+            href={`/${locale}/about`}
+            color="inherit"
+            underline="hover"
+            sx={{ display: 'block', mt: 0.5 }}
+          >
             {t('about')}
           </Link>
         </Grid>
 
-        <Grid columns={12} span={{ xs: 12, md: 4 }}>
+        {/* Колонка 2 */}
+        <Grid item xs={12} md={4}>
           <Typography variant="h6" gutterBottom>
             {t('contact')}
           </Typography>
@@ -44,7 +58,8 @@ export default function Footer() {
           </Typography>
         </Grid>
 
-        <Grid columns={12} span={{ xs: 12, md: 4 }}>
+        {/* Колонка 3 */}
+        <Grid item xs={12} md={4}>
           <Typography variant="h6" gutterBottom>
             {t('location')}
           </Typography>
@@ -55,22 +70,24 @@ export default function Footer() {
         </Grid>
       </Grid>
 
+      {/* Разделительная линия */}
       <Box
         sx={{
-          height:'1px',
+          height: '1px',
           width: '100%',
           backgroundColor: 'white',
-          marginTop: '20px',
+          opacity: 0.5,
+        }}
+      />
+
+      {/* Нижняя строка */}
+      <Box
+        sx={{
+          textAlign: 'center',
+          py: 2,
+          backgroundColor: '#32598c',
         }}
       >
-      </Box>
-      <Box 
-        sx={{ 
-          textAlign: 'center',
-          marginTop: '10px',
-          paddingBottom: '10px',
-          backgroundColor: '#32598c',
-        }}>
         <Typography variant="body2">
           {t('rights', { locale })}
         </Typography>

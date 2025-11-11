@@ -21,6 +21,7 @@
   "homepage": {
     "welcome": "Bine ati venit la Crystal Clean!",
     "welcomeDescription": "Oferim servicii de curatenie de top pentru casa si biroul dumneavoastra.",
+    "welcomeButton": "Comanda Acum",
     "MainPriceHeader": "Preturile Noastre",
     "MainPriceDescription" : "Alege din gama noastra de pachete de curatenie accesibile, adaptate nevoilor tale.",
     "MainPriceCard": {

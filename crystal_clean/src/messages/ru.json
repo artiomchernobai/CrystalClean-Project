@@ -21,6 +21,7 @@
   "homepage": {
     "welcome": "Добро пожаловать в Crystal Clean!",
     "welcomeDescription": "Мы предоставляем первоклассные услуги по уборке для вашего дома и офиса.",
+    "welcomeButton": "Заказать сейчас",
     "MainPriceHeader": "Наши цены",
     "MainPriceDescription": "Выбирайте из нашего ассортимента доступных пакетов уборки, адаптированных к вашим потребностям.",
     "MainPriceCard": {

@@ -21,6 +21,7 @@
   "homepage": {
     "welcome": "Welcome to Crystal Clean!",
     "welcomeDescription": "We provide top-notch cleaning services for your home and office.",
+    "welcomeButton": "Order Now",
     "MainPriceHeader": "Our Prices",
     "MainPriceDescription": "Choose from our range of affordable cleaning packages tailored to your needs.",
     "MainPriceCard": {
@@ -54,7 +55,6 @@
         "description": "Expert cleaning for building facades.",
         "price": "25 / square meter"
       }
-
     }
   }
 }
