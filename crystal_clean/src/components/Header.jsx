@@ -6,6 +6,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 import { useLocale, useTranslations } from 'next-intl';
 import { usePathname } from 'next/navigation';
+import { useEffect } from 'react';
 
 export default function Header() {
   const t = useTranslations('Header');
@@ -17,6 +18,11 @@ export default function Header() {
   const handleClick = (event) => setAnchorEl(event.currentTarget);
   const handleClose = () => setAnchorEl(null);
 
+  const [servicesAnchor, setServicesAnchor] = useState(null);
+  const servicesOpen = Boolean(servicesAnchor);
+  const handleServicesClick = (event) => setServicesAnchor(event.currentTarget);
+  const handleServicesClose = () => setServicesAnchor(null);
+
   const locales = ['en', 'ru', 'ro'];
 
   const getLocalizedPath = (newLocale) => {
@@ -24,6 +30,15 @@ export default function Header() {
     parts[1] = newLocale;
     return parts.join('/');
   };
+
+  useEffect(() => {
+    if (!servicesOpen) return;
+
+    const handleScroll = () => handleServicesClose();
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [servicesOpen]);
 
   return (
     <>
@@ -34,9 +49,9 @@ export default function Header() {
           color: 'black',
         }}
       >
-        <Toolbar sx={{ 
-          display: 'flex', 
-          justifyContent: 'space-between', 
+        <Toolbar sx={{
+          display: 'flex',
+          justifyContent: 'space-between',
           height: 80,
           marginLeft: 10,
           marginRight: 10,
@@ -80,14 +95,14 @@ export default function Header() {
               color="inherit"
               component={Link}
               href={`/${locale}/home`}
-              sx={{ 
-                fontSize: '20px', 
+              sx={{
+                fontSize: '20px',
                 textTransform: 'none',
                 transition: '0.2s',
-                  '&:hover': {
-                    backgroundColor: 'rgba(56, 89, 140, 0.1)',
-                    borderRadius: '10px',
-                  },
+                '&:hover': {
+                  backgroundColor: 'rgba(56, 89, 140, 0.1)',
+                  borderRadius: '10px',
+                },
               }}
             >
               {t('home')}
@@ -97,13 +112,13 @@ export default function Header() {
               color="inherit"
               component={Link}
               href={`/${locale}/about`}
-              sx={{ 
-                fontSize: '20px', 
+              sx={{
+                fontSize: '20px',
                 textTransform: 'none',
                 transition: '0.2s',
-                  '&:hover': {
-                    backgroundColor: 'rgba(56, 89, 140, 0.1)',
-                  },
+                '&:hover': {
+                  backgroundColor: 'rgba(56, 89, 140, 0.1)',
+                },
               }}
             >
               {t('about')}
@@ -111,10 +126,9 @@ export default function Header() {
 
             <Button
               color="inherit"
-              component={Link}
-              href={`/${locale}/services`}
-              sx={{ 
-                fontSize: '20px', 
+              onClick={handleServicesClick}
+              sx={{
+                fontSize: '20px',
                 textTransform: 'none',
                 transition: '0.2s',
                 '&:hover': {
@@ -124,6 +138,80 @@ export default function Header() {
             >
               {t('services')}
             </Button>
+
+            <Menu
+              anchorEl={servicesAnchor}
+              open={servicesOpen}
+              onClose={handleServicesClose}
+              disableScrollLock
+              MenuListProps={{
+                'aria-labelledby': 'services-button',
+              }}
+              PaperProps={{
+                elevation: 3,
+                sx: {
+                  mt: 1,
+                  minWidth: 220,
+                  borderRadius: '10px',
+                  boxShadow: '0px 4px 12px rgba(0,0,0,0.15)',
+                  zIndex: 2000, // ⬅ чтобы меню было поверх AppBar
+                },
+              }}
+              BackdropProps={{
+                sx: {
+                  backgroundColor: 'transparent', // ⬅ чтобы не затемняло экран
+                },
+              }}
+            >
+              <MenuItem
+                component={Link}
+                href={`/${locale}/services/carpetCleaning`}
+                onClick={handleServicesClose}
+              >
+                {t('servicesOptions.carpetCleaning')}
+              </MenuItem>
+
+              <MenuItem
+                component={Link}
+                href={`/${locale}/services/windowCleaning`}
+                onClick={handleServicesClose}
+              >
+                {t('servicesOptions.windowCleaning')}
+              </MenuItem>
+
+              <MenuItem
+                component={Link}
+                href={`/${locale}/services/fullHouseCleaning`}
+                onClick={handleServicesClose}
+              >
+                {t('servicesOptions.fullHouseCleaning')}
+              </MenuItem>
+
+              <MenuItem
+                component={Link}
+                href={`/${locale}/services/officeCleaning`}
+                onClick={handleServicesClose}
+              >
+                {t('servicesOptions.officeCleaning')}
+              </MenuItem>
+
+              <MenuItem
+                component={Link}
+                href={`/${locale}/services/afterConstructionCleaning`}
+                onClick={handleServicesClose}
+              >
+                {t('servicesOptions.afterConstructionCleaning')}
+              </MenuItem>
+
+              <MenuItem
+                component={Link}
+                href={`/${locale}/services/facadeCleaning`}
+                onClick={handleServicesClose}
+              >
+                {t('servicesOptions.facadeCleaning')}
+              </MenuItem>
+            </Menu>
+
           </Box>
 
           {/* Change Language */}

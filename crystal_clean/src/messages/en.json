@@ -9,7 +9,15 @@
   "Header": {
     "home": "HOME",
     "about": "ABOUT",
-    "services": "SERVICES"
+    "services": "SERVICES",
+    "servicesOptions": {
+      "carpetCleaning": "Carpet Cleaning",
+      "windowCleaning": "Window Cleaning",
+      "fullHouseCleaning": "Full House Cleaning",
+      "officeCleaning": "Office Cleaning",
+      "afterConstructionCleaning": "After Construction Cleaning",
+      "facadeCleaning": "Facade Cleaning"
+    }
   },
   "Footer": {
     "rights": "All rights reserved.",

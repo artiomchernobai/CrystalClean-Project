@@ -6,10 +6,18 @@
     "bigHello": "Bine ati venit! Limba curenta:",
     "smallerHello": "Aceasta este pagina de start pentru"
   },
-      "Header": {
+  "Header": {
     "home": "PRINCIPALA",
     "about": "DESPRE NOI",
-    "services": "SERVICII"
+    "services": "SERVICII",
+    "servicesOptions": {
+      "carpetCleaning": "Curatarea Covorului",
+      "windowCleaning": "Curatarea Geamurilor",
+      "fullHouseCleaning": "Curatarea Completa a Casei",
+      "officeCleaning": "Curatarea Biroului",
+      "afterConstructionCleaning": "Curatarea Dupa Constructie",
+      "facadeCleaning": "Curatarea Fatadelor"
+    }
   },
   "Footer": {
     "rights": "Toate drepturile sunt rezervate.",

@@ -6,10 +6,18 @@
     "bigHello":"Добро пожаловать! Текущий язык:",
     "smallerHello": "Это домашняя страница для "
   },
-    "Header": {
+  "Header": {
     "home": "ГЛАВНАЯ",
     "about": "О НАС",
-    "services": "УСЛУГИ"
+    "services": "УСЛУГИ",
+    "servicesOptions": {
+      "carpetCleaning": "Чистка ковров",
+      "windowCleaning": "Мойка окон",
+      "fullHouseCleaning": "Полная уборка дома",
+      "officeCleaning": "Уборка офиса",
+      "afterConstructionCleaning": "Уборка после строительства",
+      "facadeCleaning": "Чистка фасадов"
+    }
   },
   "Footer": {
     "rights": "Все права защищены.",
