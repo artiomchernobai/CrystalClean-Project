@@ -64,6 +64,20 @@
         "price": "25 / square meter"
       }
     }
+  },
+  "orderpage": {
+    "orderHeader": "Place Your Order",
+    "orderDescription": "Fill out the form below to schedule your cleaning service. We will review your order and contact you via email to confirm the details.",
+    "nameLabel": "Full Name",
+    "emailLabel": "Email Address",
+    "phoneLabel": "Phone Number",
+    "serviceLabel": "Select Service",
+    "areaLabel": "Area Size (in square meters)",
+    "commentLabel": "Additional Comments",
+    "dateLabel": "Preferred Date",
+    "submitButton": "Submit Order",
+    "orderResultHeader": "Mininal Estimated Price:"
+    
   }
 }
 

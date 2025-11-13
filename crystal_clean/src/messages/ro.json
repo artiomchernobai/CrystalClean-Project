@@ -64,5 +64,18 @@
         "price": "25 / metru patrat"
       }
     }
+  },
+  "orderpage": {
+    "orderHeader": "Plaseaza Comanda Ta",
+    "orderDescription": "Completeaza formularul de mai jos pentru a programa serviciul de curatenie. Vom revizui comanda ta si te vom contacta prin email pentru a confirma detaliile.",
+    "nameLabel": "Nume Complet",
+    "emailLabel": "Adresa de Email",
+    "phoneLabel": "Numar de Telefon",
+    "serviceLabel": "Selecteaza Serviciul",
+    "areaLabel": "Dimensiunea Suprafetei (in metri patrati)",
+    "commentLabel": "Comentariu",
+    "dateLabel": "Data Preferata",
+    "submitButton": "Trimite Comanda",
+    "orderResultHeader": "Pretul Minimal Estimat:"
   }
 }

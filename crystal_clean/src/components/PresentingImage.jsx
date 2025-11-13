@@ -41,7 +41,7 @@ export default function PresentingImage() {
                 <Typography variant="h5">{t('welcomeDescription')}</Typography>
                 <Button 
                     variant="contained" 
-                    href={`/${locale}/contact`}
+                    href={`/${locale}/order`}
                     sx={{ 
                         backgroundColor: "#00a1d1",
                         color: "white",
