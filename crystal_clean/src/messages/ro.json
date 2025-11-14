@@ -77,5 +77,62 @@
     "dateLabel": "Data Preferata",
     "submitButton": "Trimite Comanda",
     "orderResultHeader": "Pretul Minimal Estimat:"
+  },
+  "Advantages": {
+    "title": "De ce să alegi compania noastră?",
+    "description": "Oferim servicii de curățenie de înaltă calitate folosind echipamente moderne și o echipă profesionistă.",
+
+    "list": {
+      "quality": "Calitate înaltă",
+      "speed": "Lucru rapid",
+      "equipment": "Echipament profesional",
+      "team": "Personal instruit",
+      "prices": "Prețuri transparente",
+      "support": "Suport 24/7"
+    },
+
+    "descriptions": {
+      "quality": "Garantăm rezultate perfecte datorită standardelor strict de calitate.",
+      "speed": "Finalizăm lucrările rapid fără a compromite calitatea.",
+      "equipment": "Folosim echipamente moderne și sigure.",
+      "team": "Specialiști cu experiență și certificare.",
+      "prices": "Prețuri clare fără taxe ascunse.",
+      "support": "Managerii noștri sunt mereu disponibili."
+    }
+  },
+  "FAQ": {
+    "header": "Întrebări frecvente",
+
+    "q1": "Cum pot face o comandă pentru curățenie?",
+    "a1": "Puteți face o comandă direct pe site folosind formularul sau ne puteți contacta prin telefon sau WhatsApp.",
+
+    "q2": "Trebuie să fiu acasă în timpul curățeniei?",
+    "a2": "Nu, puteți lăsa cheia sau oferi acces în avans. Mulți clienți preferă curățenia în absența lor.",
+
+    "q3": "Ce produse de curățenie folosiți?",
+    "a3": "Folosim produse profesionale, eco-friendly, sigure pentru copii, animale și suprafețe.",
+
+    "q4": "Cum se calculează prețul?",
+    "a4": "Prețul depinde de serviciul ales și de suprafața în metri pătrați. Costul minim este calculat automat.",
+
+    "q5": "Aduceți propriul echipament?",
+    "a5": "Da, echipa noastră vine complet echipată cu instrumente și materiale profesionale.",
+
+    "q6": "Cât durează curățenia?",
+    "a6": "Durata depinde de tipul serviciului și de mărimea spațiului. Majoritatea lucrărilor durează între 1 și 4 ore.",
+
+    "q7": "Oferiți garanție pentru serviciu?",
+    "a7": "Da, dacă nu sunteți mulțumit, revenim gratuit pentru a remedia.",
+
+    "q8": "Pot anula sau reprograma?",
+    "a8": "Da, anularea sau reprogramarea sunt gratuite dacă sunt făcute cu cel puțin 24 de ore înainte."
+  },
+  "Contact": {
+    "header": "Contactați-ne",
+    "addressLabel": "Adresă",
+    "address": "Bălți, Moldova, Str. Independenței 12",
+    "phoneLabel": "Telefon",
+    "emailLabel": "Email",
+    "workHours": "Program de lucru: Luni–Duminică, 08:00–20:00"
   }
 }

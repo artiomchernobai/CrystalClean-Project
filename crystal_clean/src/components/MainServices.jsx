@@ -51,7 +51,7 @@ export default function MainServices() {
                 </Box> 
                 <Box //price cards container
                     sx={{
-                        width: '60%',
+                        width: '70%',
                         flexWrap: 'wrap',
                         display: 'flex',
                         justifyContent: 'center',

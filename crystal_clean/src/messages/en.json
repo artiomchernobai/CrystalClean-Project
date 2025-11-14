@@ -77,7 +77,62 @@
     "dateLabel": "Preferred Date",
     "submitButton": "Submit Order",
     "orderResultHeader": "Mininal Estimated Price:"
-    
+  },
+  "Advantages": {
+    "title": "Why Choose Our Company?",
+    "description": "We provide high-quality cleaning services using professional equipment and experienced staff.",
+
+    "list": {
+      "quality": "High Quality",
+      "speed": "Fast Work",
+      "equipment": "Professional Equipment",
+      "team": "Trained Staff",
+      "prices": "Transparent Prices",
+      "support": "24/7 Support"
+    },
+
+    "descriptions": {
+      "quality": "We guarantee perfect results thanks to strict quality standards.",
+      "speed": "Our team completes work quickly without losing quality.",
+      "equipment": "We use modern safe cleaning equipment.",
+      "team": "Our cleaners are certified and experienced.",
+      "prices": "Clear pricing with no hidden fees.",
+      "support": "Our managers are always available to assist."
+    }
+  },
+  "FAQ": {
+    "header": "Frequently Asked Questions",
+
+    "q1": "How do I book a cleaning service?",
+    "a1": "You can book directly through our website using the order form or by contacting us via phone or WhatsApp.",
+
+    "q2": "Do I need to be home during the cleaning?",
+    "a2": "No, you can leave the keys or arrange access. Many clients prefer cleaning while they are away.",
+
+    "q3": "What cleaning products do you use?",
+    "a3": "We use professional, eco-friendly cleaning products that are safe for children, pets, and surfaces.",
+
+    "q4": "How is the price calculated?",
+    "a4": "The price depends on the selected service and area in square meters. The minimum cost is calculated automatically.",
+
+    "q5": "Do you bring your own equipment?",
+    "a5": "Yes, our team arrives fully equipped with professional tools and materials.",
+
+    "q6": "How long does cleaning take?",
+    "a6": "Duration depends on the service type and space size. Most cleanings take between 1–4 hours.",
+
+    "q7": "Is there a guarantee on the work?",
+    "a7": "Yes, if you're not satisfied, we will return and fix the issue free of charge.",
+
+    "q8": "Can I cancel or reschedule?",
+    "a8": "Yes, cancellations and rescheduling are free if made at least 24 hours in advance."
+  },
+  "Contact": {
+    "header": "Contact Us",
+    "addressLabel": "Address",
+    "address": "Bălți, Moldova, Str. Independenței 12",
+    "phoneLabel": "Phone",
+    "emailLabel": "Email",
+    "workHours": "Working hours: Mon–Sun, 08:00–20:00"
   }
 }
-

@@ -9,7 +9,7 @@ export default function ServiceCard({ title, description, price, link }) {
         elevation={3}
         sx={{
           width: '100%',
-          height: '100px',
+          height: '110px',
           minWidth: '250px',
           padding: '15px',
           marginBottom: '20px',
