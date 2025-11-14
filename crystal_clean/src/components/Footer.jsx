@@ -14,16 +14,16 @@ export default function Footer() {
         backgroundColor: '#32598c',
         color: 'white',
         mt: 4,
+        pt: 4,
       }}
     >
       <Grid
         container
-        spacing={15}
+        spacing={{ xs: 4, md: 15 }} // На телефоне меньше расстояние
         justifyContent="center"
         sx={{
-          py: 3,
           px: { xs: 2, md: 8 },
-          textAlign: { xs: 'center', md: 'left' },
+          textAlign: { xs: 'center', md: 'left' }, // центр → слева
         }}
       >
         {/* Колонка 1 */}
@@ -31,6 +31,7 @@ export default function Footer() {
           <Typography variant="h6" gutterBottom>
             {t('company')}
           </Typography>
+
           <Link
             href={`/${locale}/about`}
             color="inherit"
@@ -46,11 +47,13 @@ export default function Footer() {
           <Typography variant="h6" gutterBottom>
             {t('contact')}
           </Typography>
+
           <Typography variant="body2">
             <Link href="tel:+37312345678" color="inherit" underline="hover">
               +373 123 45678
             </Link>
           </Typography>
+
           <Typography variant="body2">
             <Link href="mailto:info@example.com" color="inherit" underline="hover">
               info@example.com
@@ -63,6 +66,7 @@ export default function Footer() {
           <Typography variant="h6" gutterBottom>
             {t('location')}
           </Typography>
+
           <Typography variant="body2">
             Bălți, Moldova<br />
             Str. Independenței 12
@@ -77,6 +81,7 @@ export default function Footer() {
           width: '100%',
           backgroundColor: 'white',
           opacity: 0.5,
+          mt: 4,
         }}
       />
 
@@ -85,7 +90,6 @@ export default function Footer() {
         sx={{
           textAlign: 'center',
           py: 2,
-          backgroundColor: '#32598c',
         }}
       >
         <Typography variant="body2">

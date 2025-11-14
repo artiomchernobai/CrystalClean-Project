@@ -9,8 +9,16 @@ export default function AdvantagesSection() {
     const brandColor = "#32598c";
 
     return (
-        <Box sx={{ width: "100%", py: 8, display: "flex", flexDirection: "column", alignItems: "center", px: 2 }}>
-            
+        <Box
+            sx={{
+                width: "100%",
+                py: 8,
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+                px: 2,
+            }}
+        >
             {/* Заголовок */}
             <Typography
                 variant="h3"
@@ -24,12 +32,13 @@ export default function AdvantagesSection() {
                 {t("title")}
             </Typography>
 
-            {/* Контейнер: левая и правая части */}
+            {/* Контейнер */}
             <Box
                 sx={{
                     width: "100%",
                     maxWidth: "1600px",
                     display: "flex",
+                    flexDirection: { xs: "column", md: "row" },
                     gap: 4,
                 }}
             >
@@ -40,6 +49,7 @@ export default function AdvantagesSection() {
                         display: "flex",
                         flexWrap: "wrap",
                         gap: 3,
+                        justifyContent: { xs: "center", md: "flex-start" },
                     }}
                 >
                     <AdvCard title={t("list.quality")} desc={t("descriptions.quality")} />
@@ -50,11 +60,11 @@ export default function AdvantagesSection() {
                     <AdvCard title={t("list.support")} desc={t("descriptions.support")} />
                 </Box>
 
-                {/* Правая колонка: фото */}
+                {/* Правая колонка: фото (СКРЫТА НА МОБИЛЬНЫХ) */}
                 <Box
                     sx={{
                         flex: "1 1 40%",
-                        display: "flex",
+                        display: { xs: "none", md: "flex" },
                         alignItems: "center",
                         justifyContent: "center",
                     }}
@@ -62,7 +72,7 @@ export default function AdvantagesSection() {
                     <Box
                         sx={{
                             width: "100%",
-                            height: 700,        // 🔥 увеличенная высота
+                            height: 700,
                             borderRadius: 4,
                             overflow: "hidden",
                             position: "relative",
@@ -88,15 +98,21 @@ function AdvCard({ title, desc }) {
     return (
         <Card
             sx={{
-                width: "calc(50% - 12px)", 
+                width: {
+                    xs: "100%",
+                    sm: "48%",
+                    md: "calc(50% - 12px)",
+                },
                 p: 3.5,
                 borderRadius: 3,
                 minHeight: 210,
                 display: "flex",
                 flexDirection: "column",
-                justifyContent: "flex-start", // выравнивание сверху
+                justifyContent: "flex-start",
                 boxShadow: "0 4px 12px rgba(0,0,0,0.08)",
                 transition: "0.3s",
+                backgroundColor: '#ebfaffff',
+                boxShadow: '0 0 0',
                 "&:hover": {
                     boxShadow: "0 6px 18px rgba(0,0,0,0.12)",
                 },
@@ -106,7 +122,7 @@ function AdvCard({ title, desc }) {
                 variant="h6"
                 sx={{
                     fontWeight: 700,
-                    mb: 0.8,      // уменьшили отступ
+                    mb: 0.8,
                     fontSize: 24,
                     lineHeight: 1.3,
                 }}
@@ -126,4 +142,3 @@ function AdvCard({ title, desc }) {
         </Card>
     );
 }
-

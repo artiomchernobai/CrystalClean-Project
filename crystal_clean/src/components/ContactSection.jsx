@@ -12,7 +12,7 @@ export default function ContactSection() {
                 display: 'flex',
                 flexDirection: { xs: 'column', md: 'row' },
                 width: '100%',
-                backgroundColor: '#f5f5f5',
+                backgroundColor: 'white',
                 py: 8,
                 px: { xs: 2, sm: 4, md: 8 },
                 gap: 6,
@@ -66,13 +66,11 @@ export default function ContactSection() {
             >
                 <Box
                     component="img"
-                    src="/images/map-placeholder.png"
+                    src="/images/map_placeholder.png"
                     alt="Map"
                     sx={{
                         width: '100%',
                         maxWidth: 500,
-                        borderRadius: 3,
-                        boxShadow: '0px 4px 20px rgba(0,0,0,0.15)',
                     }}
                 />
             </Box>
