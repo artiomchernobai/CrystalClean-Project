@@ -16,12 +16,12 @@ export default function ContactSection() {
                 py: 8,
                 px: { xs: 2, sm: 4, md: 8 },
                 gap: 6,
-                alignItems: 'center',
-                justifyContent: 'space-between',
+                alignItems: '',
+
             }}
         >
             {/* LEFT SIDE — CONTACT INFO */}
-            <Box sx={{ flex: 1 }}>
+            <Box sx={{ flex: 1, display: 'flex', alignItems:'flex-end', justifyContent:'center', flexDirection:'column' }}>
                 <Typography
                     variant="h4"
                     sx={{
@@ -61,7 +61,9 @@ export default function ContactSection() {
                 sx={{
                     flex: 1,
                     display: 'flex',
-                    justifyContent: 'center',
+                    justifyContent: 'flex-start',
+                    alignItems: 'flex-start',
+
                 }}
             >
                 <Box
@@ -71,6 +73,7 @@ export default function ContactSection() {
                     sx={{
                         width: '100%',
                         maxWidth: 500,
+                        borderRadius: '10px'
                     }}
                 />
             </Box>

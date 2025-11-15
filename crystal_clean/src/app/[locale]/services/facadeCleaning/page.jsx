@@ -1,11 +1,16 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import ServiceBar from '@/components/ServiceBar';
+import OrderForm from '@/components/OrderForm';
+import ContactSection from '@/components/ContactSection';
 
 export default function FacadeCleaning() {
     return (
       <>
         <Header />
-        <h1>Facade Cleaning Page</h1>
+        <ServiceBar />
+        <OrderForm />
+        <ContactSection />
         <Footer />
       </>
     );

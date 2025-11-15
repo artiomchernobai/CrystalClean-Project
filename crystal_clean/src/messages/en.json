@@ -103,29 +103,29 @@
   "FAQ": {
     "header": "Frequently Asked Questions",
 
-    "q1": "How do I book a cleaning service?",
-    "a1": "You can book directly through our website using the order form or by contacting us via phone or WhatsApp.",
+    "q1": "How can I book a cleaning service?",
+    "a1": "You can place an order through the form on our website or contact us via phone or WhatsApp. You can also visit our office at the address listed below for more details.",
 
-    "q2": "Do I need to be home during the cleaning?",
-    "a2": "No, you can leave the keys or arrange access. Many clients prefer cleaning while they are away.",
+    "q2": "Do I need to be at home during the cleaning?",
+    "a2": "No, you can leave the keys or provide access in advance. Many clients prefer cleaning to be done in their absence. Our staff is fully responsible for the safety of your property.",
 
     "q3": "What cleaning products do you use?",
-    "a3": "We use professional, eco-friendly cleaning products that are safe for children, pets, and surfaces.",
+    "a3": "We use professional, eco-friendly, and safe products suitable for children and pets. We have never received complaints about health issues after our cleanings.",
 
     "q4": "How is the price calculated?",
-    "a4": "The price depends on the selected service and area in square meters. The minimum cost is calculated automatically.",
+    "a4": "The price depends on the service type and the size of your space. A minimum cost is calculated automatically. After submitting a request, our manager will contact you to clarify the cleaning conditions. The final cost may be higher depending on complexity.",
 
     "q5": "Do you bring your own equipment?",
-    "a5": "Yes, our team arrives fully equipped with professional tools and materials.",
+    "a5": "Yes, our team arrives fully equipped with professional tools. We select and bring all necessary equipment and cleaning products based on your cleaning needs.",
 
-    "q6": "How long does cleaning take?",
-    "a6": "Duration depends on the service type and space size. Most cleanings take between 1–4 hours.",
+    "q6": "How long does the cleaning take?",
+    "a6": "The duration depends on the service type and the size of the space. Typically, cleaning takes from 1 to 4 hours.",
 
-    "q7": "Is there a guarantee on the work?",
-    "a7": "Yes, if you're not satisfied, we will return and fix the issue free of charge.",
+    "q7": "Do you offer discounts or promotions?",
+    "a7": "Yes, we have a loyalty program. Regular customers and clients who schedule recurring cleanings receive a discount per square meter.",
 
-    "q8": "Can I cancel or reschedule?",
-    "a8": "Yes, cancellations and rescheduling are free if made at least 24 hours in advance."
+    "q8": "Can I cancel or reschedule the cleaning?",
+    "a8": "Yes, cancellation or rescheduling is free if done at least 24 hours in advance. If you cancel later than 24 hours before the appointment, the payment is non-refundable."
   },
   "Contact": {
     "header": "Contact Us",
@@ -134,5 +134,17 @@
     "phoneLabel": "Phone",
     "emailLabel": "Email",
     "workHours": "Working hours: Mon–Sun, 08:00–20:00"
+  },
+  "ServicesBar": {
+    "title": "Our Services",
+    "list": {
+      "construction": "After Construction Cleaning",
+      "office": "Office Cleaning",
+      "windows": "Window Cleaning",
+      "carpet": "Carpet Cleaning",
+      "house": "Full House Cleaning",
+      "facade": "Facade Cleaning"
+    }
   }
+
 }

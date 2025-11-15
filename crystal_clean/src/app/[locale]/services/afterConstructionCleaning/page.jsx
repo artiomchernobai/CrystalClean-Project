@@ -1,11 +1,16 @@
+import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
+import OrderForm from "@/components/OrderForm";
+import ServiceBar from "@/components/ServiceBar";
 
 export default function AfterConstructionCleaning() {
   return (
     <>
       <Header />
-      <h1>After Construction Cleaning Page</h1>
+      <ServiceBar />
+      <OrderForm />
+      <ContactSection />
       <Footer />
     </>
   );

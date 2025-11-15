@@ -103,29 +103,29 @@
   "FAQ": {
     "header": "Întrebări frecvente",
 
-    "q1": "Cum pot face o comandă pentru curățenie?",
-    "a1": "Puteți face o comandă direct pe site folosind formularul sau ne puteți contacta prin telefon sau WhatsApp.",
+    "q1": "Cum pot comanda un serviciu de curățenie?",
+    "a1": "Puteți plasa o comandă prin formularul de pe site sau ne puteți contacta prin telefon sau WhatsApp. De asemenea, puteți afla toate detaliile la biroul nostru la adresa indicată mai jos.",
 
     "q2": "Trebuie să fiu acasă în timpul curățeniei?",
-    "a2": "Nu, puteți lăsa cheia sau oferi acces în avans. Mulți clienți preferă curățenia în absența lor.",
+    "a2": "Nu, puteți lăsa cheia sau oferi acces în avans. Mulți clienți preferă ca curățenia să fie efectuată în absența lor. Personalul nostru este responsabil pentru siguranța bunurilor dumneavoastră.",
 
     "q3": "Ce produse de curățenie folosiți?",
-    "a3": "Folosim produse profesionale, eco-friendly, sigure pentru copii, animale și suprafețe.",
+    "a3": "Folosim produse profesionale, ecologice și sigure pentru copii și animale. Nu am primit plângeri legate de starea de sănătate după efectuarea curățeniilor.",
 
     "q4": "Cum se calculează prețul?",
-    "a4": "Prețul depinde de serviciul ales și de suprafața în metri pătrați. Costul minim este calculat automat.",
+    "a4": "Prețul depinde de tipul serviciului și de suprafața locuinței. Prețul minim se calculează automat. După trimiterea cererii, managerul nostru vă va contacta pentru a clarifica detaliile curățeniei. Costul final poate fi mai mare în funcție de nivelul de dificultate.",
 
-    "q5": "Aduceți propriul echipament?",
-    "a5": "Da, echipa noastră vine complet echipată cu instrumente și materiale profesionale.",
+    "q5": "Aduceți echipamentul dumneavoastră?",
+    "a5": "Da, echipa noastră vine complet echipată cu instrumente profesionale. Alegem și aducem tot echipamentul și produsele necesare în funcție de tipul curățeniei.",
 
-    "q6": "Cât durează curățenia?",
-    "a6": "Durata depinde de tipul serviciului și de mărimea spațiului. Majoritatea lucrărilor durează între 1 și 4 ore.",
+    "q6": "Cât timp durează curățenia?",
+    "a6": "Durata depinde de tipul serviciului și de suprafața locuinței. De obicei, curățenia durează între 1 și 4 ore.",
 
-    "q7": "Oferiți garanție pentru serviciu?",
-    "a7": "Da, dacă nu sunteți mulțumit, revenim gratuit pentru a remedia.",
+    "q7": "Aveți reduceri sau promoții?",
+    "a7": "Da, avem un program de loialitate. Clienții fideli și cei care comandă curățenii regulate primesc o reducere per metru pătrat.",
 
-    "q8": "Pot anula sau reprograma?",
-    "a8": "Da, anularea sau reprogramarea sunt gratuite dacă sunt făcute cu cel puțin 24 de ore înainte."
+    "q8": "Pot anula sau reprograma curățenia?",
+    "a8": "Da, anularea sau reprogramarea este gratuită dacă este făcută cu cel puțin 24 de ore înainte. Dacă anulați mai târziu de 24 de ore, plata nu este rambursată."
   },
   "Contact": {
     "header": "Contactați-ne",
@@ -134,5 +134,16 @@
     "phoneLabel": "Telefon",
     "emailLabel": "Email",
     "workHours": "Program de lucru: Luni–Duminică, 08:00–20:00"
+  },
+  "ServicesBar": {
+    "title": "Serviciile Noastre",
+    "list": {
+      "construction": "Curățenie dupa Constructii",
+      "office": "Curățenie în Oficiu",
+      "windows": "Spălarea Geamurilor",
+      "house": "Curățenie Generala Casei",
+      "carpet": "Curățenie de Covoare",
+      "facade": "Curățenie Faţadei"
+    }
   }
 }
