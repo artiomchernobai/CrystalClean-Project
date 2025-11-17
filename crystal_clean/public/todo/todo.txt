@@ -1,0 +1,4 @@
+- rework pricecards: add images, resize cards, rework section, hover actions,
+- delete home page button,
+- think about new general design features, 
+- change main banner section

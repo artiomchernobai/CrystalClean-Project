@@ -5,10 +5,10 @@ import { useTranslations } from 'next-intl';
 import Header from '@/components/Header';
 import Footer from "@/components/Footer";
 import PresentingImage from "@/components/PresentingImage";
-import MainServices from "@/components/MainServices";
 import SecondMainSection from "@/components/SecondMainSection";
 import FAQSection from "@/components/FAQSection";
 import ContactSection from "@/components/ContactSection";
+import MainPriceCardGrid from "@/components/MainPriceCardGrid";
 
 export default function DefPage() {
     const { locale } = useParams();
@@ -20,7 +20,7 @@ export default function DefPage() {
         <div>
             <Header />
             <PresentingImage />
-            <MainServices />
+            <MainPriceCardGrid />
             <SecondMainSection />
             <FAQSection />
             <ContactSection />

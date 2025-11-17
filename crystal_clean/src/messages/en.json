@@ -145,6 +145,43 @@
       "house": "Full House Cleaning",
       "facade": "Facade Cleaning"
     }
+  },
+  "MainPriceCard": {
+    "construction": {
+      "title": "Post-Construction Cleaning",
+      "desc": "Deep cleaning of spaces after renovation or construction.",
+      "price": "from 25 MDL/m²",
+      "duration": "Duration: 2–6 hours"
+    },
+    "office": {
+      "title": "Office Cleaning",
+      "desc": "Regular or one-time cleaning for office spaces.",
+      "price": "from 18 MDL/m²",
+      "duration": "Duration: 1–4 hours"
+    },
+    "windows": {
+      "title": "Window Cleaning",
+      "desc": "Professional cleaning of windows inside and outside.",
+      "price": "from 15 MDL/m²",
+      "duration": "Duration: 1–2 hours"
+    },
+    "carpet": {
+      "title": "Carpet Cleaning",
+      "desc": "Deep carpet cleaning using professional equipment.",
+      "price": "from 20 MDL/m²",
+      "duration": "Duration: 1–3 hours"
+    },
+    "house": {
+      "title": "Full House Cleaning",
+      "desc": "Complete cleaning of all rooms, furniture and surfaces.",
+      "price": "from 22 MDL/m²",
+      "duration": "Duration: 2–5 hours"
+    },
+    "facade": {
+      "title": "Facade Cleaning",
+      "desc": "Industrial cleaning of building facades.",
+      "price": "from 30 MDL/m²",
+      "duration": "Duration: 2–8 hours"
+    }
   }
-
 }

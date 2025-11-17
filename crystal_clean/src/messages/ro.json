@@ -145,5 +145,43 @@
       "carpet": "Curățenie de Covoare",
       "facade": "Curățenie Faţadei"
     }
+  },
+  "MainPriceCard": {
+    "construction": {
+      "title": "Curățenie după renovare",
+      "desc": "Curățare profundă a spațiilor după lucrări de construcție.",
+      "price": "de la 25 lei/m²",
+      "duration": "Durată: 2–6 ore"
+    },
+    "office": {
+      "title": "Curățenie în birouri",
+      "desc": "Curățenie regulată sau ocazională pentru spațiile de birou.",
+      "price": "de la 18 lei/m²",
+      "duration": "Durată: 1–4 ore"
+    },
+    "windows": {
+      "title": "Spălare geamuri",
+      "desc": "Curățare profesională a geamurilor pe interior și exterior.",
+      "price": "de la 15 lei/m²",
+      "duration": "Durată: 1–2 ore"
+    },
+    "carpet": {
+      "title": "Curățare covoare",
+      "desc": "Curățare profundă a covoarelor cu echipamente profesionale.",
+      "price": "de la 20 lei/m²",
+      "duration": "Durată: 1–3 ore"
+    },
+    "house": {
+      "title": "Curățenie generală în casă",
+      "desc": "Curățenie completă a tuturor camerelor, mobilierului și suprafețelor.",
+      "price": "de la 22 lei/m²",
+      "duration": "Durată: 2–5 ore"
+    },
+    "facade": {
+      "title": "Curățare fațade",
+      "desc": "Curățare industrială a fațadelor clădirilor.",
+      "price": "de la 30 lei/m²",
+      "duration": "Durată: 2–8 ore"
+    }
   }
 }
