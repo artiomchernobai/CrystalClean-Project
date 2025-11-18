@@ -13,15 +13,17 @@ export default function Footer() {
       sx={{
         backgroundColor: '#32598c',
         color: 'white',
+        paddingTop:'20px',
+        paddingBotton:'20px',
       }}
     >
       <Grid
         container
-        spacing={{ xs: 4, md: 15 }} // На телефоне меньше расстояние
+        spacing={{ xs: 4, md: 15 }}
         justifyContent="center"
         sx={{
           px: { xs: 2, md: 8 },
-          textAlign: { xs: 'center', md: 'left' }, // центр → слева
+          textAlign: { xs: 'center', md: 'left' },
         }}
       >
         {/* Колонка 1 */}

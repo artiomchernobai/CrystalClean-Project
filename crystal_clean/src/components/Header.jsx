@@ -58,9 +58,9 @@ export default function Header() {
   return (
     <>
       {/* HEADER BAR */}
-      <AppBar 
-        position="static" 
-        sx={{ 
+      <AppBar
+        position="static"
+        sx={{
           backgroundColor: 'white', color: 'black',
           paddingTop: '10px',
           paddingBottom: '10px',
@@ -91,7 +91,7 @@ export default function Header() {
               display: { xs: 'none', lg: 'flex' },
               gap: 2,
               alignItems: 'center',
-              color:'black'
+              color: 'black'
             }}
           >
 
@@ -99,8 +99,8 @@ export default function Header() {
               component={Link}
               href={`/${locale}/order`}
               sx={{
-                fontSize:'20px',
-                fontWeight:'500',
+                fontSize: '20px',
+                fontWeight: '500',
                 color: 'black'
               }}
             >
@@ -209,6 +209,12 @@ export default function Header() {
             <ListItem disablePadding>
               <ListItemButton component={Link} href={`/${locale}/about`} onClick={toggleDrawer}>
                 <ListItemText primary={t('about')} />
+              </ListItemButton>
+            </ListItem>
+
+            <ListItem disablePadding>
+              <ListItemButton component={Link} href={`/${locale}/order`} onClick={toggleDrawer}>
+                <ListItemText primary={'+373-789-45-612'} />
               </ListItemButton>
             </ListItem>
 

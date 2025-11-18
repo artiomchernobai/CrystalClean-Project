@@ -10,8 +10,9 @@ export default function OrderSummary({ priceData }) {
   return (
     <Box
       sx={{
-        width: '100%',
-        padding: 4,
+        width: { xs: "100%", md: "50%" },
+        px: { xs: 2, md: 4 },
+        py: 4,
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'top',
@@ -27,14 +28,14 @@ export default function OrderSummary({ priceData }) {
       >
         <Typography /* head */ variant='h3'>{t('orderResultHeader')}</Typography>
         <Box
-        sx={{
-          display: 'flex',
-          flexDirection: "column",
-          marginLeft: 6,
-          justifyContent: 'center',
-          alignItems: 'center'
+          sx={{
+            display: 'flex',
+            flexDirection: "column",
+            marginLeft: 6,
+            justifyContent: 'center',
+            alignItems: 'center'
 
-        }}
+          }}
         // price box
         >
 

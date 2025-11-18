@@ -17,6 +17,18 @@ export default function MainPriceCardsGrid() {
         marginBottom:'20px'
       }}
     >
+
+      <Typography
+        align="center"
+        sx={{
+          mb:3,
+          fontSize: '60px',
+          color: '#32598c',
+          fontWeight: '700'
+        }}
+      >
+        {t('title')}
+      </Typography>
       <Box
         sx={{
           display: "flex",
@@ -113,13 +125,13 @@ function ServiceCard({ title, desc, price, duration, img, href, bgcolor }) {
       >
         {/* TITLE */}
         <Typography
-          variant='h5'
           sx={{
             p: 2,
+            pt: 3,
             textAlign: "center",
             color: "#32598c",
             fontWeight: 700,
-            FontSize: '26px',
+            fontSize: '26px',
             zIndex: 3,
             backgroundColor: "white",
             marginTop: '20px',

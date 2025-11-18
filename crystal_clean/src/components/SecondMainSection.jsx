@@ -12,7 +12,7 @@ export default function AdvantagesSection() {
         <Box
             sx={{
                 width: "100%",
-                py: 8,
+                py: 6,
                 display: "flex",
                 flexDirection: "column",
                 alignItems: "center",
@@ -22,12 +22,12 @@ export default function AdvantagesSection() {
         >
             {/* Заголовок */}
             <Typography
-                variant="h3"
                 sx={{
                     textAlign: "center",
                     fontWeight: 700,
                     mb: 6,
                     color: 'white',
+                    fontSize:'60px'
                 }}
             >
                 {t("title")}
@@ -111,7 +111,7 @@ function AdvCard({ title, desc }) {
                     sm: "48%",
                     md: "calc(50% - 12px)",
                 },
-                p: 3.5,
+                p: 3,
                 borderRadius: 3,
                 minHeight: 210,
                 display: "flex",
@@ -144,7 +144,7 @@ function AdvCard({ title, desc }) {
             <Typography
                 sx={{
                     color: "text.secondary",
-                    fontSize: 18.5,
+                    fontSize: 20,
                     lineHeight: 1.45,
                     color: 'white',
                 }}

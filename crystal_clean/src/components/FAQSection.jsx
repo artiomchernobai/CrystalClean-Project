@@ -30,12 +30,12 @@ export default function FAQSection() {
             }}
         >
             <Typography
-                variant="h4"
                 sx={{
                     fontWeight: 700,
                     mb: 6,
                     textAlign: 'center',
                     color: '#32598c',
+                    fontSize: '60px'
                 }}
             >
                 {t('header')}
@@ -62,12 +62,12 @@ export default function FAQSection() {
                                 py: 2,
                             }}
                         >
-                            <Typography sx={{ fontWeight: 600, fontSize: 18 }}>
+                            <Typography sx={{ fontWeight: 600, fontSize: 22 }}>
                                 {item.question}
                             </Typography>
                         </AccordionSummary>
                         <AccordionDetails sx={{ px: 3, py: 2 }}>
-                            <Typography sx={{ fontSize: 16, color: 'text.secondary' }}>
+                            <Typography sx={{ fontSize: 20, color: 'text.secondary' }}>
                                 {item.answer}
                             </Typography>
                         </AccordionDetails>

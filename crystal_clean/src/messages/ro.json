@@ -147,6 +147,7 @@
     }
   },
   "MainPriceCard": {
+    "title": "Ce noi facem?",
     "construction": {
       "title": "Curățenie după renovare",
       "desc": "Curățare profundă a spațiilor după lucrări de construcție.",

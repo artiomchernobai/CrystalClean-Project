@@ -63,16 +63,19 @@ export default function OrderForm({ onPriceChange }) {
     return (
         <Box
             sx={{
-                marginLeft: '40px',
-                width: '70%',
+                width: "100%",
+                maxWidth: 600,
+                mx: "auto",
+                px: { xs: 2, sm: 3, md: 4 },
+                py: 4
             }}
         >
-            <Typography 
-                variant="h3"  
-                sx={{ 
+
+            <Typography
+                variant="h3"
+                sx={{
                     fontWeight: 600,
                     mb: 2,
-                    paddingTop: 4,
                     paddingLeft: 4,
                     width: '100%'
                 }}>
@@ -121,7 +124,16 @@ export default function OrderForm({ onPriceChange }) {
                     onChange={handleChange}
                     margin="normal"
                     required
+                    SelectProps={{
+                        MenuProps: {
+                            disableScrollLock: true,
+                            PaperProps: {
+                                sx: { maxHeight: 300 }
+                            }
+                        }
+                    }}
                 >
+
                     {services.map((option) => (
                         <MenuItem key={option.value} value={option.value}>
                             {option.label}

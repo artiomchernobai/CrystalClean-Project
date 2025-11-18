@@ -147,6 +147,7 @@
     }
   },
   "MainPriceCard": {
+    "title": "What are we doing?",
     "construction": {
       "title": "Post-Construction Cleaning",
       "desc": "Deep cleaning of spaces after renovation or construction.",
