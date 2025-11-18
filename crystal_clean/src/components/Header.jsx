@@ -94,19 +94,18 @@ export default function Header() {
               color:'black'
             }}
           >
+
             <Button
               component={Link}
-              href={`/${locale}/home`}
+              href={`/${locale}/order`}
               sx={{
-                fontSize: '20px',
-                textTransform: 'none',
-                '&:hover': { backgroundColor: 'rgba(56,89,140,0.1)' },
+                fontSize:'20px',
+                fontWeight:'500',
                 color: 'black'
               }}
             >
-              {t('home')}
+              +373-789-45-612
             </Button>
-
             <Button
               component={Link}
               href={`/${locale}/about`}

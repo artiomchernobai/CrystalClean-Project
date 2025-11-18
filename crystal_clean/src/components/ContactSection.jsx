@@ -12,7 +12,6 @@ export default function ContactSection() {
                 display: 'flex',
                 flexDirection: { xs: 'column', md: 'row' },
                 width: '100%',
-                backgroundColor: 'white',
                 py: 8,
                 px: { xs: 2, sm: 4, md: 8 },
                 gap: 6,

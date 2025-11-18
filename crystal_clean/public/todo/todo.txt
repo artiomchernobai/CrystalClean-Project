@@ -1,4 +1,9 @@
-- rework pricecards: add images, resize cards, rework section, hover actions,
 - delete home page button,
 - think about new general design features, 
 - change main banner section
+
+-- add different blue background colors to the pricecards
+-- add backgound pattern
+-- add section with sponsors/partners
+-- add gradien of colors
+-- rework main section with image; change image; add fancy background; create catchy description,

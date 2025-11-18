@@ -64,7 +64,7 @@ export default function OrderForm({ onPriceChange }) {
         <Box
             sx={{
                 marginLeft: '40px',
-                width: '70%'
+                width: '70%',
             }}
         >
             <Typography 
@@ -158,9 +158,9 @@ export default function OrderForm({ onPriceChange }) {
                     fullWidth
                     sx={{
                         mt: 3,
-                        backgroundColor: '#32598c',
+                        backgroundColor: '#00a1d1',
                         fontWeight: 600,
-                        '&:hover': { backgroundColor: '#274573' },
+                        '&:hover': { backgroundColor: '#006c8dff' },
                     }}
                 >
                     {t('submitButton')}

@@ -13,8 +13,6 @@ export default function Footer() {
       sx={{
         backgroundColor: '#32598c',
         color: 'white',
-        mt: 4,
-        pt: 4,
       }}
     >
       <Grid

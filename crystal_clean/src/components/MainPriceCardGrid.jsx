@@ -11,9 +11,10 @@ export default function MainPriceCardsGrid() {
   return (
     <Box
       sx={{
-        backgroundColor: "#f2f2f2",
         py: 5,
         px: { xs: 2, md: 6 },
+        marginTop:'20px',
+        marginBottom:'20px'
       }}
     >
       <Box
@@ -85,14 +86,14 @@ export default function MainPriceCardsGrid() {
 }
 
 
-function ServiceCard({ title, desc, price, duration, img, href }) {
+function ServiceCard({ title, desc, price, duration, img, href, bgcolor }) {
   return (
     <Link href={href} style={{ textDecoration: "none" }}>
       <Box
         className="card"
         sx={{
-          width: { xs: "100%", md: "400px" },
-          height: { xs: "500px"},
+          width: { xs: "100%", md: "440px" },
+          height: { xs: "330px"},
           backgroundColor: "white",
           borderRadius: 2,
           overflow: "hidden",
@@ -103,8 +104,10 @@ function ServiceCard({ title, desc, price, duration, img, href }) {
           display: "flex",
           flexDirection: "column",
           justifyContent:'center',
+          transition: "opacity 0.3s ease",
           "&:hover": {
             boxShadow: "0 6px 20px rgba(0,0,0,0.15)",
+            backgroundColor: '#32598c'
           },
         }}
       >
@@ -120,7 +123,12 @@ function ServiceCard({ title, desc, price, duration, img, href }) {
             zIndex: 3,
             backgroundColor: "white",
             marginTop: '20px',
-            marginBottom: '5px'
+            transition: "opacity 0.3s ease",
+            ".card:hover &": {
+              backgroundColor: '#32598c',
+              color: 'white',
+              borderBottom: '2px',
+            },
           }}
         >
           {title}
@@ -153,7 +161,6 @@ function ServiceCard({ title, desc, price, duration, img, href }) {
             right: 0,
             bottom: 0,
             p: 2,
-            backgroundColor: "white",
             opacity: 0,
             transition: "opacity 0.3s ease",
             overflow: "hidden",
@@ -161,9 +168,11 @@ function ServiceCard({ title, desc, price, duration, img, href }) {
             flexDirection: "column",
             justifyContent:'flex-start',
             alignItems: 'center',
-
+            backgroudColor: '#32598c',
             ".card:hover &": {
               opacity: 1,
+              backgtoundColor: '#32598c',
+              color: 'white'
             },
           }}
         >

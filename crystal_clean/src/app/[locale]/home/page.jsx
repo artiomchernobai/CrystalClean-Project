@@ -9,6 +9,7 @@ import SecondMainSection from "@/components/SecondMainSection";
 import FAQSection from "@/components/FAQSection";
 import ContactSection from "@/components/ContactSection";
 import MainPriceCardGrid from "@/components/MainPriceCardGrid";
+import { Box } from '@mui/material'
 
 export default function DefPage() {
     const { locale } = useParams();
@@ -17,7 +18,14 @@ export default function DefPage() {
     const t = useTranslations('Placeholder');
 
     return (
-        <div>
+        <Box
+            sx={{
+                backgroundColor: "#f8f8f8",
+                backgroundImage: "radial-gradient( rgba(50,89,140,0.3), 1px, transparent 1px)",
+                backgroundSize: "18px 18px",
+                backgroundAttachment:'fixed'
+            }}
+        >
             <Header />
             <PresentingImage />
             <MainPriceCardGrid />
@@ -25,6 +33,6 @@ export default function DefPage() {
             <FAQSection />
             <ContactSection />
             <Footer />
-        </div>
+        </Box>
     );
 }
