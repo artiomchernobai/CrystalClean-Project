@@ -54,7 +54,7 @@ export default function FAQSection() {
                         }}
                     >
                         <AccordionSummary
-                            expandIcon={<ExpandMoreIcon />}
+                            expandIcon={<ExpandMoreIcon sx={{backgroundColor:"#32598c", color:'white', borderRadius:'15px'}} />}
                             aria-controls={`panel${index}-content`}
                             id={`panel${index}-header`}
                             sx={{
@@ -67,10 +67,23 @@ export default function FAQSection() {
                             </Typography>
                         </AccordionSummary>
                         <AccordionDetails sx={{ px: 3, py: 2 }}>
-                            <Typography sx={{ fontSize: 20, color: 'text.secondary' }}>
-                                {item.answer}
-                            </Typography>
+                            <Box>
+                                <Typography sx={{ fontSize: 20, color: 'text.secondary' }}>
+                                    {item.answer}
+                                </Typography>
+
+                                {/* Декоративная линия */}
+                                <Box
+                                    sx={{
+                                        backgroundColor: '#32598c',
+                                        height: '5px',
+                                        borderRadius: 2,
+                                        mt: 2
+                                    }}
+                                />
+                            </Box>
                         </AccordionDetails>
+
                     </Accordion>
                 ))}
             </Box>

@@ -11,87 +11,101 @@ export default function MainPriceCardsGrid() {
   return (
     <Box
       sx={{
-        py: 5,
+        py: 10,
         px: { xs: 2, md: 6 },
-        marginTop:'20px',
-        marginBottom:'20px'
+        marginTop: '20px',
+        marginBottom: '20px',
+        width: '100%',
+        display: 'flex',
+        justifyContent:'center',
+        alignContent:'center',
       }}
     >
-
-      <Typography
-        align="center"
-        sx={{
-          mb:3,
-          fontSize: '60px',
-          color: '#32598c',
-          fontWeight: '700'
-        }}
-      >
-        {t('title')}
-      </Typography>
       <Box
         sx={{
-          display: "flex",
-          flexDirection: { xs: "column", md: "row" },
-          flexWrap: "wrap",
-          gap: 3,
-          justifyContent: "center",
+          width: '90%',
+          background:"rgba(255,255,255,0.85)",
+          pt: '20px',
+          pb: '40px',
+          borderRadius: 4,
+          boxShadow:"0 8px 28px rgba(0,0,0,0.12)",
         }}
       >
+        <Typography
+          align="center"
+          sx={{
+            mb: 3,
+            fontSize: '60px',
+            color: '#32598c',
+            fontWeight: '700'
+          }}
+        >
+          {t('title')}
+        </Typography>
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: { xs: "column", md: "row" },
+            flexWrap: "wrap",
+            gap: 3,
+            justifyContent: "center",
+          }}
+        >
 
-        <ServiceCard
-          href={`/${locale}/services/constructionCleaning`}
-          title={t("construction.title")}
-          desc={t("construction.desc")}
-          price={t("construction.price", { value: 25 })}
-          duration={t("construction.duration")}
-          img="/images/afterConstructionCleaning.jpg"
-        />
+          <ServiceCard
+            href={`/${locale}/services/constructionCleaning`}
+            title={t("construction.title")}
+            desc={t("construction.desc")}
+            price={t("construction.price", { value: 25 })}
+            duration={t("construction.duration")}
+            img="/images/afterConstructionCleaning.jpg"
+          />
 
-        <ServiceCard
-          href={`/${locale}/services/officeCleaning`}
-          title={t("office.title")}
-          desc={t("office.desc")}
-          price={t("office.price", { value: 15 })}
-          duration={t("office.duration")}
-          img="/images/services/office.jpg"
-        />
+          <ServiceCard
+            href={`/${locale}/services/officeCleaning`}
+            title={t("office.title")}
+            desc={t("office.desc")}
+            price={t("office.price", { value: 15 })}
+            duration={t("office.duration")}
+            img="/images/services/office.jpg"
+          />
 
-        <ServiceCard
-          href={`/${locale}/services/windowCleaning`}
-          title={t("windows.title")}
-          desc={t("windows.desc")}
-          price={t("windows.price", { value: 10 })}
-          duration={t("windows.duration")}
-          img="/images/windowCleaning.jpg"
-        />
+          <ServiceCard
+            href={`/${locale}/services/windowCleaning`}
+            title={t("windows.title")}
+            desc={t("windows.desc")}
+            price={t("windows.price", { value: 10 })}
+            duration={t("windows.duration")}
+            img="/images/windowCleaning.jpg"
+          />
 
-        <ServiceCard
-          href={`/${locale}/services/carpetCleaning`}
-          title={t("carpet.title")}
-          desc={t("carpet.desc")}
-          price={t("carpet.price", { value: 20 })}
-          duration={t("carpet.duration")}
-          img="/images/carpetCleaning.jpg"
-        />
+          <ServiceCard
+            href={`/${locale}/services/carpetCleaning`}
+            title={t("carpet.title")}
+            desc={t("carpet.desc")}
+            price={t("carpet.price", { value: 20 })}
+            duration={t("carpet.duration")}
+            img="/images/carpetCleaning.jpg"
+          />
 
-        <ServiceCard
-          href={`/${locale}/services/houseCleaning`}
-          title={t("house.title")}
-          desc={t("house.desc")}
-          price={t("house.price", { value: 30 })}
-          duration={t("house.duration")}
-          img="/images/houseCleaning.jpeg"
-        />
+          <ServiceCard
+            href={`/${locale}/services/houseCleaning`}
+            title={t("house.title")}
+            desc={t("house.desc")}
+            price={t("house.price", { value: 30 })}
+            duration={t("house.duration")}
+            img="/images/houseCleaning.jpeg"
+          />
 
-        <ServiceCard
-          href={`/${locale}/services/facadeCleaning`}
-          title={t("facade.title")}
-          desc={t("facade.desc")}
-          price={t("facade.price", { value: 40 })}
-          duration={t("facade.duration")}
-          img="/images/facadeCleaning.jpg"
-        />
+          <ServiceCard
+            href={`/${locale}/services/facadeCleaning`}
+            title={t("facade.title")}
+            desc={t("facade.desc")}
+            price={t("facade.price", { value: 40 })}
+            duration={t("facade.duration")}
+            img="/images/facadeCleaning.jpg"
+          />
+        </Box>
       </Box>
     </Box>
   );
@@ -104,8 +118,9 @@ function ServiceCard({ title, desc, price, duration, img, href, bgcolor }) {
       <Box
         className="card"
         sx={{
-          width: { xs: "100%", md: "440px" },
-          height: { xs: "330px"},
+          width: { xs: "90%", md: "440px" },
+          ml: {xs: '5%', md: 0},
+          height: { xs: "330px" },
           backgroundColor: "white",
           borderRadius: 2,
           overflow: "hidden",
@@ -115,7 +130,7 @@ function ServiceCard({ title, desc, price, duration, img, href, bgcolor }) {
           transition: "0.3s",
           display: "flex",
           flexDirection: "column",
-          justifyContent:'center',
+          justifyContent: 'center',
           transition: "opacity 0.3s ease",
           "&:hover": {
             boxShadow: "0 6px 20px rgba(0,0,0,0.15)",
@@ -178,7 +193,7 @@ function ServiceCard({ title, desc, price, duration, img, href, bgcolor }) {
             overflow: "hidden",
             display: "flex",
             flexDirection: "column",
-            justifyContent:'flex-start',
+            justifyContent: 'flex-start',
             alignItems: 'center',
             backgroudColor: '#32598c',
             ".card:hover &": {
@@ -188,9 +203,9 @@ function ServiceCard({ title, desc, price, duration, img, href, bgcolor }) {
             },
           }}
         >
-          <Typography sx={{ mb: 1, fontSize:'18px' }}>{desc}</Typography>
-          <Typography sx={{ fontWeight: 600, fontSize:'20px', mb: 0.5 }}>{price}</Typography>
-          <Typography sx={{ fontSize: '18px'}} variant="body2">{duration}</Typography>
+          <Typography sx={{ mb: 1, fontSize: '18px' }}>{desc}</Typography>
+          <Typography sx={{ fontWeight: 600, fontSize: '20px', mb: 0.5 }}>{price}</Typography>
+          <Typography sx={{ fontSize: '18px' }} variant="body2">{duration}</Typography>
         </Box>
       </Box>
     </Link>

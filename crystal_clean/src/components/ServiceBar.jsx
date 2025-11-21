@@ -40,7 +40,7 @@ export default function ServiceBar() {
                     width: "100%",
                     maxWidth: "1400px",
                     display: "flex",
-                    gap: 2,
+                    gap: 1,
                     overflowX: "auto",
                     "::-webkit-scrollbar": { height: 6 },
                     "::-webkit-scrollbar-thumb": {
@@ -48,6 +48,8 @@ export default function ServiceBar() {
                         borderRadius: 0
                     },
                     flexWrap: 'wrap',
+                    justifyContent: "center",
+
                 }}
             >
                 {servicesList.map(service => {
@@ -61,8 +63,7 @@ export default function ServiceBar() {
                         >
                             <Box
                                 sx={{
-                                    px: 3,
-                                    borderRadius: 2,
+                                    px: 2,
                                     whiteSpace: "nowrap",
                                     fontSize: 17,
                                     fontWeight: 600,

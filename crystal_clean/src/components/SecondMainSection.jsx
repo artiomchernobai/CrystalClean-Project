@@ -20,7 +20,6 @@ export default function AdvantagesSection() {
                 backgroundColor: brandColor,
             }}
         >
-            {/* Заголовок */}
             <Typography
                 sx={{
                     textAlign: "center",
@@ -33,7 +32,6 @@ export default function AdvantagesSection() {
                 {t("title")}
             </Typography>
 
-            {/* Контейнер */}
             <Box
                 sx={{
                     width: "100%",
@@ -43,7 +41,6 @@ export default function AdvantagesSection() {
                     gap: 4,
                 }}
             >
-                {/* Левая колонка: карточки */}
                 <Box
                     sx={{
                         flex: "1 1 60%",
@@ -61,7 +58,6 @@ export default function AdvantagesSection() {
                     <AdvCard title={t("list.support")} desc={t("descriptions.support")} />
                 </Box>
 
-                {/* Правая колонка: фото (СКРЫТА НА МОБИЛЬНЫХ) */}
                 <Box
                     sx={{
                         flex: "1 1 40%",

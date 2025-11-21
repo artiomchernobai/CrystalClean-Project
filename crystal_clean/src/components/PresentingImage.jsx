@@ -4,57 +4,85 @@ import { useTranslations, useLocale } from 'next-intl';
 export default function PresentingImage() {
     const t = useTranslations('homepage');
     const locale = useLocale();
-  return (
-    <Box>
+
+    return (
         <Box
-        sx={{
-            position: 'relative',
-            width: '100%',
-            height: '700PX',
-            backgroundImage: `
-            linear-gradient(rgba(30, 20, 100, 0.0), rgba(30, 20, 100, 0.5)),
-            url('/images/main_page_first.jpg')
-            `,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            color: '#fff',
-            fontSize: '24px',
-            fontWeight: 'bold',
-        }}
+            sx={{
+                width: '100%',
+                backgroundColor: '#b4e2f2',
+                display: 'flex',
+                justifyContent: 'center',
+                flexDirection: { xs: 'column', md: 'row' },
+                minHeight: 820,
+            }}
         >
             <Box
                 sx={{
-                    backgroundColor: 'rgba(0, 0, 0, 0.5)',
-                    width:'100%',
-                    padding: '20px',  
+                    flex: 1,
                     display: 'flex',
-                    flexDirection: 'column',
                     alignItems: 'center',
                     justifyContent: 'center',
-                    gap: '20px',
-                }}
+                 }}
             >
-                <Typography variant="h1">{t('welcome')}</Typography>
-                <Typography variant="h5">{t('welcomeDescription')}</Typography>
-                <Button 
-                    variant="contained" 
-                    href={`/${locale}/order`}
-                    sx={{ 
-                        backgroundColor: "#00a1d1",
-                        color: "white",
-                        minwidth: '150px',
-                        height: '50px',  
-                        fontSize: '18px',
+                <Box
+                    component="img"
+                    src="/images/main_image.jpg"
+                    alt={t('welcome')}
+                    sx={{
+                        maxWidth: 800,
+                        ml: '20px',
+                        height: 600,    
+                        objectFit: 'cover',
+                        borderRadius: 2,
+                        boxShadow: 3,
+                        display: 'block',
                     }}
-                >
-                    {t('welcomeButton')}
-                </Button>
+                />
             </Box>
 
+            <Box
+                sx={{
+                    maxWidth: '45%',
+                    flex: 1,
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'flex-start',
+                    p: { xs: 1, md: '0px'  },
+                    mr:{xs: 0, md: '32px'}
+                }}
+            >
+                <Box
+                    sx={{
+                        width: '100%',
+                        color: 'Black',
+                        borderRadius: 2,
+                        textAlign: { xs: 'center', md: 'left' },
+                    }}
+                >
+                    <Typography
+                        sx={{ fontSize: { xs: '2rem', md: '64px' }, fontWeight: 700, mb: 2 }}
+                    >
+                        {t('welcome')}
+                    </Typography>
+
+                    <Button
+                        variant="contained"
+                        href={`/${locale}/order`}
+                        sx={{
+                            backgroundColor: '#00a1d1',
+                            color: 'white',
+                            width: { xs: '40%', md: '40%'},
+                            height: 75,
+                            fontSize: 24,
+                            fontWeight: 500,
+                            mt: '32px',
+                            '&:hover': { backgroundColor: '#008fb0' },
+                        }}
+                    >
+                        {t('welcomeButton')}
+                    </Button>
+                </Box>
+            </Box>
         </Box>
-    </Box>
-  );
+    );
 }
